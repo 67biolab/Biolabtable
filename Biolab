@@ -175,7 +175,6 @@ getgenv().Biolab = {
     ['Spread Modifications'] = {
 		['Enabled'] = false,
 		    ['[Double-Barrel SG]'] = 1,
-		    ['[Revolver]'] = 1,
 		    ['[TacticalShotgun]'] = 0,
 	},
 
