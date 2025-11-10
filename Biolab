@@ -208,6 +208,14 @@ getgenv().Biolab = {
             ['AllowedGuns'] = { "[Double-Barrel SG]"}   
     },
 
+    ['Animations'] = {
+        ["Enabled"] = true,
+        ["Running"] = "Zombie",   
+        ["Walking"] = "Zombie",  
+        ["Jumping"] = "Ninja",   
+        ["Falling"] = "Ninja"    
+    }
+
     ['AimView'] = {
         ["Enabled"] = false,
         ["Color"] = Color3.fromRGB(255, 0, 0)
