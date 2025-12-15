@@ -1,0 +1,169 @@
+shared.Biolab = {
+    ["License Key"] = "",
+    ["Mode"] = "Table",  -- Table or UI
+    ["Silent Aim"] = {
+        ['Enabled'] = false,
+        ["key"] = 'C',
+        ['Mode'] = "Target", -- Target or Auto
+        ["Whitelisted"] = {"[Double-Barrel SG]", "[Revolver]", "[TacticalShotgun]"},
+        ["Nearest Point"] = {
+            ["Scale"] = 3
+        },
+        ['Prediction'] = {
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0
+        },
+        ["Field of View"] = {
+            ['Show Fov'] = false,
+            ["Size"] = {
+                ['X'] = 10,
+                ['Y'] = 10,
+                ['Z'] = 10
+            }
+        }
+    },
+    ["Trigger Bot"] = {
+        ['Enabled'] = false,
+        ["key"] = 'C',
+        ['Mode'] = "Target", -- Target or Auto
+        ["Whitelisted"] = {"[Double-Barrel SG]", "[Revolver]", "[TacticalShotgun]"},
+        ["Hitbox"] = false,
+        ['Active Mode'] = "Toggle", -- Toggle or Hold
+        ['Delay'] = 0,
+        ['Prediction'] = {
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0
+        },
+        ["Field of View"] = {
+            ['Show Fov'] = false,
+            ["Size"] = {
+                ['X'] = 10,
+                ['Y'] = 10,
+                ['Z'] = 10
+            }
+        }
+    },
+    ["Camera Aim"] = {
+        ['Enabled'] = false,
+        ["key"] = 'C',
+        ['Mode'] = "Target", -- Target or Auto
+        ["Whitelisted"] = {"[Double-Barrel SG]", "[Revolver]", "[TacticalShotgun]"},
+        ["Smoothness"] = 0.065,
+        ['Prediction'] = {
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0
+        },
+        ["Field of View"] = {
+            ['Show Fov'] = false,
+            ["Size"] = {
+                ['X'] = 10,
+                ['Y'] = 10,
+                ['Z'] = 10
+            }
+        }
+    },
+    ['Skins Modifications'] = {
+        ['Enable'] = false,
+        ["Mode"] = "select", -- Unlock = unlocks all skins in your inventory | Select = choose which skins the Skin Changer applies
+        ['Skin Changer'] = {
+            ["[Double-Barrel SG]"] = "Galaxy",
+            ["[Revolver]"] = "Luck",
+            ["[TacticalShotgun]"] = "Galaxy",
+            ["[Knife]"] = "Love Kukri",
+            -- To add more tools, just do ['Tool Name'] = "Skin Name" — must match exactly, including capitals
+        },
+    },
+    ['Speed Modification'] = {
+        ['Enabled'] = false,
+        ['Default Speed'] = 335,
+        ['Enable Keybinds'] = true, 
+        ['Keybinds'] = { -- Means you can change it mid-game
+            ['Toggle'] = 'V',
+            ['Increase +5'] = 'M', 
+            ['Decrease -5'] = 'N',
+        },
+    },
+    ['Weapon Modifications'] = {
+        ['Spread Modifications'] = {
+            ['Enabled'] = false,
+            ['Multiplier'] = 0,
+            ['Enable Keybind'] = true,
+            ['Keybinds'] = { -- Means you can change it mid-game
+                ['Toggle'] = 'G',
+                ['Increase +0.1'] = 'J',
+                ['Decrease -0.1'] = 'K',
+            },
+        },
+    },
+    ['Player Modifications'] = {
+        ['Hitbox Expender'] = {
+            ['Enabled'] = false,
+            ["Size"] = {
+                ["Show Hitbox"] = false,
+                ["Fov Size"] = {
+                    ['X'] = 20,
+                    ['Y'] = 20,
+                    ['Z'] = 20
+                },
+            }, 
+            ['Enable Keybind'] = false,
+            ['Keybinds'] = { -- Means you can change it mid-game
+                ['Increase +1'] = 'L',
+                ['Decrease -1'] = 'P',
+            },
+        },
+    },
+    ['Cooldown Modifications'] = { -- Makes you shoot faster
+        ['Enabled'] = false,
+        ["Delay Modifications"] = { 
+            ['[Double-Barrel SG]'] = true, 
+            ['[Revolver]'] = true,
+            ['[TacticalShotgun]'] = true,
+            -- To add more guns, just do ['Gun Name'] = true,
+        },
+    },
+    ['Slowdown Modifications'] = { 
+        ['Enabled'] = false,
+        ["Multiplier"] = 0, -- 0 = Removes all slowdown, 1 = Uses the game's normal slowdown
+        ["Gun"] = { 
+            ['[Double-Barrel SG]'] = true, 
+            ['[Revolver]'] = true,
+            ['[TacticalShotgun]'] = true,
+            -- To add more guns, just do ['Gun Name'] = true,
+        },
+    },
+    ['Client Redirection'] = {
+        ['Enabled'] = false,
+        ["Gun"] = { 
+            ['[Double-Barrel SG]'] = true, 
+            ['[Revolver]'] = true,
+            ['[TacticalShotgun]'] = true,
+            -- To add more guns, just do ['Gun Name'] = true,
+        },
+    },
+    ["Visualize Modification"] = {
+        ["Enabled"] = false,
+        ["Keybind"] = "Q",
+        ["Name"] = {
+            ["Size"] = 15,
+            ["Position"] = "bottom", -- Top, middle, bottom
+        },
+    },
+    ["Inventory Sorter"] = {
+        ['Enabled'] = false,
+        ['Sort Food'] = true,
+        ['Key'] = 'B',
+        ["Auto Sort"] = true, -- Automatically sorts the inventory as soon as you respawn
+        ['Tools'] = {
+            [1] = '[Double-Barrel SG]',
+            [2] = '[Revolver]', 
+            [3] = '[TacticalShotgun]',
+            [4] = '[Knife]',
+            -- To add more tools, simply use the format: [any number] = '[Tool Name]'
+        },
+    },
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dbdf9cffec7f47db785de11ff71886cd.lua"))()
