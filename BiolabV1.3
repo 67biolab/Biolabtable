@@ -1,122 +1,194 @@
 shared.Biolab = {
     ["License Key"] = "",
     ["Mode"] = "Table",  -- Table or UI // If you want too change your mode your must rejoin.
-    ["Checks"] = {"Visible", "Knock", "Crew", "Grabbed", "SelfKnock", "Forcefield"},
     ['Silent Aim'] = {
         ['Enabled'] = false,
-        ["Keybind"] = 'C',
-        ['Type Mode'] = 'Target', -- Automatic or Target
-        ['Style'] = "Closest Point",  -- Closest Point or Closest Part
+        ['Type Mode'] = 'Automatic', -- Automatic or Target
+        ['Style'] = "Closest Point",  -- Closest Point or Closest Part Or body parts
+        
         ['Prediction'] = { 
             ['X'] = 0,
             ['Y'] = 0,
             ['Z'] = 0
         },
-        ['Custom Configuration'] = { 
+    
+        ['Weapons'] = {
+            ['Enabled'] = false,
+            '[Double-Barrel SG]',
+            '[Revolver]',
+            '[TacticalShotgun]',
+        },
+    
+        ['Configuration'] = { 
             ['Enabled'] = true,
             ["Show FOV"] = false,
+            
+            ["Size"] = {
+                ["X"] = 6,
+                ["Y"] = 6,
+                ["Z"] = 6,
+            },
+        },
+        
+        ['Custom Configuration'] = { 
+            ['Enabled'] = false,
+            ["Show FOV"] = false,
+            
             ["Weapon"] = {
                 ['[Double-Barrel SG]'] = {
-                    ["X"] = 10,
-                    ["Y"] = 10,
-                    ["Z"] = 10,
+                    ["X"] = 30,
+                    ["Y"] = 30,
+                    ["Z"] = 30,
                 },
                 ['[Revolver]'] = {
-                    ["X"] = 10,
-                    ["Y"] = 10,
-                    ["Z"] = 10,
+                    ["X"] = 60,
+                    ["Y"] = 60,
+                    ["Z"] = 60,
                 },
                 ['[TacticalShotgun]'] = {
-                    ["X"] = 10,
-                    ["Y"] = 10,
-                    ["Z"] = 10,
+                    ["X"] = 40,
+                    ["Y"] = 40,
+                    ["Z"] = 40,
                 },
             }
         },
     },
+
     ['Camera Aim'] = {
         ['Enabled'] = false,
-        ["Keybind"] = 'C',
         ['Type Mode'] = 'Target', -- Automatic or Target
-        ['Easing'] = "Linear",
-        ['Style'] = "Closest Point",  -- Closest Point or Closest Part
-        ['Smoothing'] = { 
-            ['X'] = 30, 
-            ['Y'] = 30,
-            ['Z'] = 30,
+        ['Easing'] = "Linear", 
+        ['Style'] = "Closest Point",  -- Closest Point or Closest Part Or body parts
+        
+        ['Smoothing'] = {
+            ["Width"] = 50, 
+            ["Height"] = 50,
         },
+        
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
             ['Z'] = 0
         },
-        ['Camera'] = {
-            ['First Person'] = true,
-            ['Third Person'] = false,
-            ['Right Click'] = true,
+    
+        ['Weapons'] = {
+            ['Enabled'] = false,
+            '[Double-Barrel SG]',
+            '[Revolver]',
+            '[TacticalShotgun]',
         },
-        ['Custom Configuration'] = { 
+    
+        ['Camera Modes'] = {
+            ['First Person'] = true,
+            ['Right Click'] = true,
+            ['Third Person'] = true,
+            ['Shit Lock'] = true,
+        },
+    
+        ['Configuration'] = { 
             ['Enabled'] = true,
             ["Show FOV"] = false,
+            
+            ["Size"] = {
+                ["X"] = 6,
+                ["Y"] = 6,
+                ["Z"] = 6,
+            },
+        },
+        
+        ['Custom Configuration'] = { 
+            ['Enabled'] = false,
+            ["Show FOV"] = false,
+            
             ["Weapon"] = {
                 ['[Double-Barrel SG]'] = {
-                    ["X"] = 10,
-                    ["Y"] = 10,
-                    ["Z"] = 10,
+                    ["X"] = 30,
+                    ["Y"] = 30,
+                    ["Z"] = 30,
                 },
                 ['[Revolver]'] = {
-                    ["X"] = 10,
-                    ["Y"] = 10,
-                    ["Z"] = 10,
+                    ["X"] = 60,
+                    ["Y"] = 60,
+                    ["Z"] = 60,
                 },
                 ['[TacticalShotgun]'] = {
-                    ["X"] = 10,
-                    ["Y"] = 10,
-                    ["Z"] = 10,
+                    ["X"] = 40,
+                    ["Y"] = 40,
+                    ["Z"] = 40,
                 },
             }
         },
     },
+    
     ['Trigger Bot'] = {
         ['Enabled'] = false, 
-        ["Keybind"] = 'C',
-        ['Keybind Style'] = "Hold", --  Toggle Or Hold Or Always
-        ['Type Mode'] = 'Target', -- Automatic or Target
         ['Method'] = "Fov", -- Fov Or Body Parts
+        
+        ['Activation'] = {
+            ['Activation Style'] = 'Automatic', -- Automatic or Target
+            ['Activation Mode'] = 'Hold', -- Hold, Toggle, Always
+            ['Activation Bind'] = 'C',
+        },
+    
+        ['Delay'] = {
+            ['Click Cooldown'] = 0,
+            
+            ['Specific Guns'] = {
+                ['Enabled'] = false,
+                ['[Double-Barrel SG]'] = 0,
+                ['[Revolver]'] = 0.03,
+                ['[TacticalShotgun]'] = 0.1,
+            },
+        },
+    
+        ['Weapons'] = {
+            ['Enabled'] = false,
+            '[Double-Barrel SG]',
+            '[Revolver]',
+            '[TacticalShotgun]',
+        },
+    
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
             ['Z'] = 0
         },
-        ['Delay'] = {
-            ['Custom Weapon Delay'] = {
-                ['[Double-Barrel SG]'] = 0,
-                ['[Revolver]']  = 0,
-                ['[TacticalShotgun]']  = 0,
-            }
-        },
-        ['Custom Configuration'] = { 
+    
+        ['Configuration'] = { 
             ['Enabled'] = true,
             ["Show FOV"] = false,
+            
+            ["Size"] = {
+                ["X"] = 6,
+                ["Y"] = 6,
+                ["Z"] = 6,
+            },
+        },
+        
+        ['Custom Configuration'] = { 
+            ['Enabled'] = false,
+            ["Show FOV"] = false,
+            
             ["Weapon"] = {
                 ['[Double-Barrel SG]'] = {
-                    ["X"] = 10,
-                    ["Y"] = 10,
-                    ["Z"] = 10,
+                    ["X"] = 30,
+                    ["Y"] = 30,
+                    ["Z"] = 30,
                 },
                 ['[Revolver]'] = {
-                    ["X"] = 10,
-                    ["Y"] = 10,
-                    ["Z"] = 10,
+                    ["X"] = 60,
+                    ["Y"] = 60,
+                    ["Z"] = 60,
                 },
                 ['[TacticalShotgun]'] = {
-                    ["X"] = 10,
-                    ["Y"] = 10,
-                    ["Z"] = 10,
+                    ["X"] = 40,
+                    ["Y"] = 40,
+                    ["Z"] = 40,
                 },
             }
         },
     },
+
     ['Client Modifications'] = {
         ['Skins Modifications'] = {
             ['Enable'] = false,
@@ -128,21 +200,20 @@ shared.Biolab = {
                 -- To add more tools, just do ['Tool Name'] = "Skin Name" — must match exactly, including capitals
             },
         },
-        ['Client Redirection'] = {
-            ['Enabled'] = false,
-            ["Gun"] = { 
-                ['[Double-Barrel SG]'] = true, 
-                ['[Revolver]'] = true,
-                ['[TacticalShotgun]'] = true,
-                -- To add more guns, just do ['Gun Name'] = true,
+
+        ['Client Modifications'] = {
+            ['Client Redirection'] = {
+                ['Enabled'] = false,
             },
         },
-        ["Avater Changer"] = {
-            ["Enable"] = true,
+
+        ["Avatar Changer"] = {
+            ["Enable"] = false,
             ["Mode"] = "Username", -- Username or Display
             ["name"] = "T3VL", 
         },
     },
+    
     ['Movement Modifications'] = {
         ['Speed Modification'] = {
             ['Enabled'] = false,
@@ -154,27 +225,18 @@ shared.Biolab = {
                 ['Decrease -5'] = 'N',
             },
         },
-        ['Jump Modification'] = {
-            ['Enabled'] = false,
-            ['Default Jump'] = 120,
-            ['Enable Keybinds'] = true,
-            ['Keybinds'] = {
-                ['Toggle'] = 'H',
-                ['Increase +5'] = 'F9',
-                ['Decrease -5'] = 'F10',
-            },
-        },
-        ['Slowdown Modifications'] = { 
-            ['Enabled'] = false,
-            ["Multiplier"] = 0, -- 0 = Removes all slowdown, 1 = Uses the game's normal slowdown
-            ["Gun"] = { 
-                ['[Double-Barrel SG]'] = true, 
-                ['[Revolver]'] = true,
-                ['[TacticalShotgun]'] = true,
-                -- To add more guns, just do ['Gun Name'] = true,
-            },
-        },
+
+        ["Slowdown"] = {
+            ["Enabled"] = false,
+            ["Guns"] = { -- 100 means game's slowdown, 0 means no slowdown
+                ["[Revolver]"] = 50,
+                ["[Double-Barrel SG]"] = 0,
+                ["[TacticalShotgun]"] = 40
+                -- To add more guns, just do ['GunName'] = = 40,
+            }
+        }
     },
+
     ['Weapon Modifications'] = {
         ['Spread Modifications'] = {
             ['Enabled'] = false,
@@ -186,20 +248,23 @@ shared.Biolab = {
                 ['Decrease -0.1'] = 'K',
             },
         },
-        ['Cooldown Modifications'] = { -- Makes you shoot faster
-            ['Enabled'] = false,
-            ["Delay Modifications"] = { 
-                ['[Double-Barrel SG]'] = true, 
-                ['[Revolver]'] = true,
-                ['[TacticalShotgun]'] = true,
-                -- To add more guns, just do ['Gun Name'] = true,
-            },
+
+        ["Delay"] = {
+            ["Enabled"] = false,
+            ["Settings"] = { -- 100 means game's Delay, 0 means no Delay
+                ["[Revolver]"] = 50,
+                ["[Double-Barrel SG]"] = 0,
+                ["[TacticalShotgun]"] = 40
+                -- To add more guns, just do ['GunName'] = = 40,
+            }
         },
+
         ["Inventory Sorter"] = {
             ['Enabled'] = false,
             ['Sort Food'] = true,
             ['Key'] = 'B',
             ["Auto Sort"] = true, -- Automatically sorts the inventory as soon as you respawn
+
             ['Tools'] = {
                 [1] = '[Double-Barrel SG]',
                 [2] = '[Revolver]', 
@@ -209,37 +274,47 @@ shared.Biolab = {
             },
         },
     },
+    
     ['Player Modifications'] = {
-        ['Hitbox Expender'] = {
-            ['Enabled'] = false,
-            ["Size"] = {
-                ["Show Hitbox"] = false,
-                ["Fov Size"] = {
-                    ['X'] = 20,
-                    ['Y'] = 20,
-                    ['Z'] = 20
-                },
-            }, 
-            ['Enable Keybind'] = false,
-            ['Keybinds'] = { -- Means you can change it mid-game
-                ['Increase +1'] = 'L',
-                ['Decrease -1'] = 'P',
-            },
-        },
+        ["Hitbox Expender"] = {
+            ["Enabled"] = false,
+            ["Guns"] = {
+                ["[Revolver]"] = 50,
+                ["[Double-Barrel SG]"] = 0,
+                ["[TacticalShotgun]"] = 40
+                -- To add more guns, just do ['GunName'] = = 40,
+            }
+        }
     },
+
     ["Visualize Modification"] = {
-        ["Enabled"] = true,
+        ["Enabled"] = false,
         ["Keybind"] = "Q",
         ["Locked on Color"] = Color3.fromRGB(0, 255, 0), 
+
         ["Name"] = {
             ["Size"] = 15,
             ["Position"] = "bottom", -- Top, middle, bottom
             ["Color"] = Color3.fromRGB(255, 255, 255),
         },
     },
+
     ["Misc"] = {
-        ['Force Hit'] = true,
-        ['No Tripping'] = true,
+        ['Force Hit'] = false,
+        ['No Tripping'] = false,
+    },
+
+    ["Keybind"] = {
+        ["Toggle"] = "E",
+        ["Silent Aim"] = "C",
+        ["Camera Aim"] = "C"
+    },
+
+    ["Checks"] = {
+        ["Knocked"] = true,
+        ["Grabbed"] = true,
+        ["Wall"] = true,
+        ["Crew"] = true,
     },
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c48f4c0fe4a56df9f305de7f9172b49f.lua"))()
