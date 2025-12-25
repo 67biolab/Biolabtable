@@ -119,10 +119,8 @@ shared.Biolab = {
             }
         },
     },
-    
     ['Trigger Bot'] = {
         ['Enabled'] = false, 
-        ['Method'] = "Fov", -- Fov Or Hitbox
         
         ['Activation'] = {
             ['Activation Style'] = 'Automatic', -- Automatic or Target
@@ -201,10 +199,8 @@ shared.Biolab = {
             },
         },
 
-        ['Client Modifications'] = {
-            ['Client Redirection'] = {
-                ['Enabled'] = false,
-            },
+        ['Client Redirection'] = {
+            ['Enabled'] = false,
         },
 
         ["Avatar Changer"] = {
@@ -236,7 +232,6 @@ shared.Biolab = {
             }
         }
     },
-
     ['Weapon Modifications'] = {
         ['Spread Modifications'] = {
             ['Enabled'] = false,
@@ -248,7 +243,6 @@ shared.Biolab = {
                 ['Decrease -0.1'] = 'K',
             },
         },
-
         ["Delay"] = {
             ["Enabled"] = false,
             ["Settings"] = { -- 100 means game's Delay, 0 means no Delay
@@ -258,7 +252,6 @@ shared.Biolab = {
                 -- To add more guns, just do ['GunName'] = = 40,
             }
         },
-
         ["Inventory Sorter"] = {
             ['Enabled'] = false,
             ['Sort Food'] = true,
@@ -274,7 +267,6 @@ shared.Biolab = {
             },
         },
     },
-    
     ['Player Modifications'] = {
         ["Hitbox Expender"] = {
             ["Enabled"] = false,
@@ -317,4 +309,5 @@ shared.Biolab = {
         ["Crew"] = true,
     },
 }
+
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dbdf9cffec7f47db785de11ff71886cd.lua"))()
